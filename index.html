@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web GIS Pariwisata Bandar Lampung</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-logo">🌸 SIG Pariwisata</div>
+        <nav class="nav-tabs">
+            <a href="#cover-section" class="nav-link active">Home</a>
+            <a href="#gis-section" class="nav-link">Peta Wisata</a>
+            <a href="#about-section" class="nav-link">Tentang</a>
+        </nav>
+    </header>
+
+    <section id="cover-section" class="cover-container">
+        <div class="cover-overlay"></div>
+        <div class="cover-content">
+            <h1>WEB GIS PARIWISATA</h1>
+            <h2>KOTA BANDAR LAMPUNG</h2>
+            <p>Jelajahi keindahan destinasi wisata terbaik di Kota Bandar Lampung berbasis Sistem Informasi Geografis.</p>
+            <a href="#gis-section" class="btn-explore">Mulai Menjelajah 🗺️</a>
+        </div>
+    </section>
+
+    <section id="gis-section" class="main-gis-container">
+        
+        <div id="sidebar">
+            <div class="profile-section">
+                <div class="profile-pic">
+                    <img src="foto.jpg.jpeg" alt="Aulia Ramanda">
+                </div>
+                <h2>Aulia Ramanda</h2>
+                <p>2313034013</p>
+                <p>Pendidikan Geografi</p>
+            </div>
+
+            <div class="search-section">
+                <h3>Persebaran Pariwisata</h3>
+                <p>Klik nama tempat di bawah untuk mengarahkan peta otomatis.</p>
+                <input type="text" id="search-input" placeholder="Cari wisata...">
+            </div>
+
+            <div id="wisata-list"></div>
+        </div>
+
+        <div id="map"></div>
+
+        <div class="floating-title">
+            💖 Sebaran Objek Wisata 💖
+        </div>
+    </section>
+
+    <section id="about-section" class="about-container">
+        <div class="about-card">
+            <h3>Tentang Web GIS Ini</h3>
+            <p>Web GIS ini dibuat untuk memetakan dan menyajikan informasi spasial mengenai objek-objek wisata unggulan yang tersebar di wilayah Kota Bandar Lampung.</p>
+            <p>Dikembangkan oleh <strong>Aulia Ramanda</strong> dari Program Studi <strong>Pendidikan Geografi</strong> sebagai bagian dari pemanfaatan teknologi geospasial untuk kemajuan pariwisata daerah.</p>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
